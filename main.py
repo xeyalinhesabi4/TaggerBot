@@ -42,15 +42,16 @@ LOGGER = logging.getLogger(__name__)
 
 api_id = int(os.environ.get("APP_ID","18049084"))
 api_hash = os.environ.get("API_HASH","7e74b1e22026fcc291d32b3d431aa21e")
-bot_token = os.environ.get("TOKEN","") # Botunuzun Tokenini Girin.
-sahib = os.environ.get("sahib", "") # Sahiplik Hesabin Kullanıcı Adını Girin .
-BOT_ID = int(os.environ.get("BOT_ID", "")) # Botunuzun İd'si ( Tokenin Başındaki Rakamları ) Girin .
+bot_token = os.environ.get("TOKEN","6824543648:AAEKM9GJQbBflExLLh1DOnJDrVm8NAOEBaM") # Botunuzun Tokenini Girin.
+sahib = os.environ.get("sahib", "XeyalOwner") # Sahiplik Hesabin Kullanıcı Adını Girin .
+BOT_ID = int(os.environ.get("BOT_ID", "6824543648")) # Botunuzun İd'si ( Tokenin Başındaki Rakamları ) Girin .
 DATABASE_URL = os.environ.get("DATABASE_URL","") # MongoDB veritabanınızın url'si.
-BOT_USERNAME = os.environ.get("BOT_USERNAME","") # Botunuzun kullanıcı adı.
-LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL","")) # Botunuzun eylemleri kaydedeceği kayıt grubunun id'si.
-GROUP_SUPPORT = os.environ.get("GROUP_SUPPORT", "") # Botunuzdan yasaklanan kullanıcıların itiraz işlemleri için başvuracağı grup, kanal veya kullanıcı. Boş bırakırsanız otomatik olarak OWNER_ID kimliğine yönlendirecektir.
+BOT_USERNAME = os.environ.get("BOT_USERNAME","@xeyal_tagger_bot") # Botunuzun kullanıcı adı.
+LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL","100201771732")) # Botunuzun eylemleri kaydedeceği kayıt grubunun id'si.
+GROUP_SUPPORT = os.environ.get("GROUP_SUPPORT", "xeyal_bots1") # Botunuzdan yasaklanan kullanıcıların itiraz işlemleri için başvuracağı grup, kanal veya kullanıcı. Boş bırakırsanız otomatik olarak OWNER_ID kimliğine yönlendirecektir.
 GONDERME_TURU = os.environ.get("GONDERME_TURU", True) # Botunuzun yanıtladığınız mesajı gönderme türü. Eğer direkt iletmek isterseniz False, kopyasını göndermek isterseniz True olarak ayarlayın.
-OWNER_ID = int(os.environ.get("OWNER_ID","")) # Sahip hesabın id'si
+OWNER_ID = int(os.environ.get("OWNER_ID"6823518340"
+Grup ID: -1002019934884")) # Sahip hesabın id'si
 LANGAUGE = os.environ.get("LANGAUGE", "TR")
 
 client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
